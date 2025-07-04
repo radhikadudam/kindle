@@ -1,0 +1,119 @@
+/* Reset and base */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+  }
+  
+  /* Landing page wrapper */
+  .landing-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 60px 20px; */
+    /* min-height: 100vh; */
+    height: 488px;
+  }
+  
+  /* Container */
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  /* Image section */
+  .image-section {
+    flex: 1;
+    min-width: 300px;
+    background-color: #fafafa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+  }
+  
+  .image-section img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 12px;
+    object-fit: contain;
+  }
+  
+  /* Info section */
+  .info-section {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .product-title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #222;
+  }
+  
+  .product-author {
+    font-size: 1.2rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  
+  .product-description {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  
+  .price {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .cta-button {
+    padding: 14px 28px;
+    background-color: #2c3e50;
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: fit-content;
+    margin: auto;
+  }
+  
+  .cta-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive tweaks */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .image-section,
+    .info-section {
+      padding: 20px;
+    }
+  
+    .product-title {
+      font-size: 2rem;
+    }
+  
+    .price {
+      font-size: 1.5rem;
+    }
+  }
+  
