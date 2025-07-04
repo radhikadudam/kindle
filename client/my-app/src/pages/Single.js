@@ -20,23 +20,21 @@ function Single() {
     useEffect(() => {
         const getbook = async () => {
             try {
-                const response = await fetch(`http://localhost:3001/api/book/${id}`)
-
+                const response = await fetch(`http://localhost:3001/api/book/${id}`);
                 if (!response.ok) {
-                    console.log(response.text())
-                }
-                else {
-                    const datas = await response.json()
-                    setData(datas)
-                    console.log(data)
-                    console.log(datas)
+                    console.log(await response.text());
+                } else {
+                    const datas = await response.json();
+                    setData(datas);
+                    console.log(datas);
                 }
             } catch (error) {
-                console.log(error)
+                console.log(error);
             }
-        }
-        getbook()
-    }, [])
+        };
+        getbook();
+    }, [id]); // ✅ id is now listed
+
     return (
         <div>
             <Navbar />
