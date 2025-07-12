@@ -13,7 +13,7 @@ const Read = () => {
 
     useEffect(() => {
         const getBook = async () => {
-            const response = await fetch(`http://localhost:3001/api/book/${id}`);
+            const response = await fetch(`http://kindle-production-5bff.up.railway.app/api/book/${id}`);
             if (!response.ok) {
                 const errorText = await response.text();
                 console.error("Fetch error:", errorText);

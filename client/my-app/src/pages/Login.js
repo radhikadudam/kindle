@@ -12,7 +12,7 @@ export default function Login() {
     console.log("Logging in with", { email, password });
     e.preventDefault()
     try {
-      const response = await fetch("http://localhost:3001/api/auth/login", {
+      const response = await fetch("https://kindle-production-5bff.up.railway.app/api/auth/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password })

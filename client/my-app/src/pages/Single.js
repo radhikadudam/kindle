@@ -20,7 +20,7 @@ function Single() {
     useEffect(() => {
         const getbook = async () => {
             try {
-                const response = await fetch(`http://localhost:3001/api/book/${id}`);
+                const response = await fetch(`https://kindle-production-5bff.up.railway.app/api/book/${id}`);
                 if (!response.ok) {
                     console.log(await response.text());
                 } else {

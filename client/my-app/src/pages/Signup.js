@@ -17,7 +17,7 @@ export default function Signup() {
     console.log("Registering with", { name, email, password });
   
     try {
-      const response = await fetch(`http://localhost:3001/api/auth/register`, {
+      const response = await fetch(`https://kindle-production-5bff.up.railway.app/api/auth/register`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

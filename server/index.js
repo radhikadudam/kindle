@@ -1,7 +1,7 @@
-const express = require('express');
-const cors = require('cors');
 const dotenv = require('dotenv');
 dotenv.config();
+const express = require('express');
+const cors = require('cors');
 const cookieParser = require('cookie-parser');
 const path = require('path');
 
@@ -15,7 +15,7 @@ console.log(process.env.PASSWORD, process.env.USER);
 
 // CORS configuration
 app.use(cors({
-    origin: 'http://localhost:3000',  // React frontend
+    origin: 'https://kindle-production-5bff.up.railway.app',  // React frontend
     credentials: true
 }));
 
