@@ -35,6 +35,9 @@ app.use(express.static(path.join(_dirname, '/client/my-app/build')));
 app.get('*', (_, res) => {
     res.sendFile(path.resolve(_dirname, 'client', 'my-app', 'build', 'index.html'));
 });
+app.get('/health', (req, res) => {
+  res.json({ status: 'OK' });
+});
 
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
