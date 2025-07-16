@@ -36,7 +36,8 @@ app.get('*', (_, res) => {
     res.sendFile(path.resolve(_dirname, 'client', 'my-app', 'build', 'index.html'));
 });
 
-// Start server
-app.listen(process.env.PORT, () => {
-    console.log(`Server running on port ${process.env.PORT || 3001}`);
+const PORT = process.env.PORT || 3001;
+app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
 });
+
