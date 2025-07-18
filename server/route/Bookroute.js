@@ -1,11 +1,11 @@
 
 
 const express = require('express');
+const db = require('../db');
+const path = require('path');
 const cors = require('cors');
 const dotenv = require('dotenv');
-const path = require('path');
 const multer = require('multer');
-const db = require('../db');
 
 const router = express.Router();
 // const pdf = req.file?.path;
